@@ -1,0 +1,86 @@
+/* src/components/Resume.css */
+.resume {
+    padding: 80px 40px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .resume-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .resume h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .resume-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .experience,
+  .education,
+  .skills {
+    width: 45%;
+    margin-bottom: 40px;
+  }
+  
+  .experience h3,
+  .education h3,
+  .skills h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .job,
+  .degree {
+    margin-bottom: 30px;
+  }
+  
+  .job h4,
+  .degree h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .job-duration,
+  .degree-duration {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .job ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .job li {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 8px;
+  }
+  
+  .skills ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .skills li {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 8px;
+  }
+  
+  @media (max-width: 768px) {
+    .experience,
+    .education,
+    .skills {
+      width: 100%;
+    }
+  }
+  
