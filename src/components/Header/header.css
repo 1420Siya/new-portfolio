@@ -14,8 +14,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background-color: #2c3e50;
-    color: #fff;
+    background-color: whitesmoke;
+    color: #120303;
     position: fixed;
     top: 0;
     width: 100%;
@@ -44,14 +44,14 @@
   
   .nav a {
     text-decoration: none;
-    color: #fff;
+    color: black ;
     font-size: 1rem;
     font-weight: 500;
     transition: color 0.3s;
   }
   
   .nav a:hover {
-    color: #f39c12;
+    color: #e3e2e0;
   }
   
   .hamburger {

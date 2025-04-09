@@ -1,6 +1,5 @@
-// src/components/Header.js
 import React, { useState } from 'react';
-import './Header.css';  // Add custom styles if needed
+import './Header.css';  
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +11,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <h1>Siyabonga's portfolio website</h1>
+        <h1>Siyabonga Masilela </h1>
       </div>
       <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
         <ul>

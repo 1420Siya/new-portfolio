@@ -1,8 +1,8 @@
 // src/components/Contact.js
 import React from 'react';
-import './Contact.css';
+import './Contacts.css';
 
-const Contact = () => {
+const Contacts = () => {
   return (
     <section className="contact" id="contact">
       <div className="contact-container">
@@ -24,4 +24,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contacts;

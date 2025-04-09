@@ -1,11 +1,4 @@
-/* Reset some default styles */
-/* styles.css */
-.profile-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-
+/* Reset styles */
 * {
   margin: 0;
   padding: 0;
@@ -14,43 +7,63 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-  overflow-x: hidden;  
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+
+/* Profile Image */
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  object-fit: cover;
+  position: absolute;
 }
 
 /* Hero Section */
 .hero {
-  background: ('image1.jpg') no-repeat center center/cover; 
-  height: 100vh;
+  position: relative;
+  height: 130vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
   text-align: center;
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  animation: moveBackground 15s linear infinite; 
+  color: black;
+  overflow: hidden;
 }
 
-@keyframes moveBackground {
+/* Moving Blue Background Animation */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 102, 255, 0.6), rgba(0, 0, 128, 0.6));
+  z-index: -1;
+  animation: moveWaves 10s infinite linear alternate;
+}
+
+@keyframes moveWaves {
   0% {
-    background-position: center center;
+    transform: translateY(-20px);
   }
   50% {
-    background-position: center top;
+    transform: translateY(20px);
   }
   100% {
-    background-position: center center;
+    transform: translateY(-20px);
   }
 }
 
 .hero-content {
   max-width: 800px;
   padding: 20px;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6); /
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
   opacity: 0;
-  animation: fadeIn 2s forwards 1s; 
+  animation: fadeIn 2s forwards 1s;
+  position: relative;
 }
 
 .hero h1 {
@@ -58,33 +71,33 @@ body {
   margin-bottom: 20px;
   letter-spacing: 1px;
   opacity: 0;
-  animation: slideInFromTop 1s ease-out forwards 1.5s; 
+  animation: slideInFromTop 1s ease-out forwards 1.5s;
 }
 
 .hero p {
   font-size: 1.25rem;
   margin-bottom: 30px;
   opacity: 0;
-  animation: slideInFromTop 1s ease-out forwards 2s; 
+  animation: slideInFromTop 1s ease-out forwards 2s;
 }
 
 .btn {
   padding: 12px 24px;
-  background-color: #007bff;
+  background-color: black;
   color: white;
   text-decoration: none;
   border-radius: 5px;
   font-size: 1rem;
   transition: background-color 0.3s ease;
   opacity: 0;
-  animation: fadeIn 2s forwards 2.5s; /* Fade in the button */
+  animation: fadeIn 2s forwards 2.5s;
 }
 
 .btn:hover {
   background-color: #0056b3;
 }
 
-/* Keyframes for text fading in */
+/* Keyframe Animations */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -94,7 +107,6 @@ body {
   }
 }
 
-/* Keyframes for sliding in from top */
 @keyframes slideInFromTop {
   0% {
     transform: translateY(-50px);

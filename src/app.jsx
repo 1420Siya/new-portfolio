@@ -1,37 +1,48 @@
-import React from 'react'
-import './app.css'
+import React from 'react';
+import './index.css';
+import './animatedhero.css'; // Ensure this is the correct path
 
 // Import all components
-import Header from './Components/header/header.jsx'
-import Home from './Components/hero/home'
-import About from './Components/about/about'
-import Resume from './Components/resume/resume'
-import Services from './Components/Services/services'
-import Skills from './Components/skills/skills'
-import Projects from './Components/projects/projects'
-import Blog from './Components/blogs/blogs'
-import Contact from './Components/contact/contact'
-import Footer from './Components/footer/footer'
+import Header from './components/Header/header';
+import HeroSection from './components/HeroSection/hero';
+import About from './components/AboutSection/about';
+import Resume from './components/Resume/resume';
+import Services from './components/Services/services';
+import Skills from './components/Skills/skills';
+import Projects from './components/Projects/project';
+import Blog from './components/Blog/blog';
+import Contacts from './components/Contacts/contacts';
+import Footer from './components/Footer/footer';
 
 function App() {
   return (
     <div className="app">
+      {/* Background animation */}
+      <div className="animated-bg"></div>
+      
+      {/* Floating animated emojis */}
+      <div className="emoji">😊</div>
+      <div className="emoji">🔥</div>
+      <div className="emoji">🚀</div>
+      <div className="emoji">💡</div>
+      <div className="emoji">🎨</div>
+
       <Header />
       
       <main>
-        <Home />
+        <HeroSection />
         <About />
         <Resume />
         <Services />
         <Skills />
         <Projects />
         <Blog />
-        <Contact />
+        <Contacts />
       </main>
 
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

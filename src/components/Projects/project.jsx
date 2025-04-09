@@ -1,6 +1,6 @@
 // src/components/Projects.js
 import React from 'react';
-import './Projects.css';
+import './project.css';
 
 const Projects = () => {
   return (
@@ -20,7 +20,7 @@ const Projects = () => {
             <img src="https://via.placeholder.com/400x250" alt="Project 2" />
             <div className="project-info">
               <h3>Project 2</h3>
-              <p>sport sciences services</p>
+              <p>Sport sciences services</p>
               <a href="/" className="btn">View Project</a>
             </div>
           </div>
