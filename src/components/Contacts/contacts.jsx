@@ -8,14 +8,20 @@ const Contacts = () => {
       <div className="contact-container">
         <h2>Contact Me</h2>
         <form>
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required />
+          <div className="form-group">
+            <label htmlFor="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
 
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email" required />
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required />
+          </div>
 
-          <label htmlFor="message">Message</label>
-          <textarea id="message" name="message" placeholder="Your message" required></textarea>
+          <div className="form-group">
+            <label htmlFor="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+          </div>
 
           <button type="submit" className="btn">Send Message</button>
         </form>

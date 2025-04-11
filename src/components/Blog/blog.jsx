@@ -1,4 +1,3 @@
-// src/components/Blog.js
 import React from 'react';
 import './Blog.css';
 
@@ -8,22 +7,31 @@ const Blog = () => {
       <div className="blog-container">
         <h2>Latest Blog Posts</h2>
         <div className="blog-posts">
+
           <div className="blog-post">
-            <img src="https://via.placeholder.com/400x250" alt="Blog Post 1" />
             <div className="post-content">
-              <h3>Blog Post 1</h3>
-              <p>recently featured in the National Newspaper TIMES OF ESWATINI after an interview by a Sport jounalist</p>
+              <h3>Frontend Tips</h3>
+              <p>Shared tips on frontend development and design inspiration with the dev community.</p>
               <a href="/" className="btn">Read More</a>
             </div>
           </div>
+
           <div className="blog-post">
-            <img src="https://via.placeholder.com/400x250" alt="Blog Post 2" />
             <div className="post-content">
-              <h3>Blog Post 2</h3>
-              <p>Recently created a website for myself</p>
+              <h3>Personal Website</h3>
+              <p>Recently built a personal portfolio site using React and modern CSS design techniques.</p>
               <a href="/" className="btn">Read More</a>
             </div>
           </div>
+
+          <div className="blog-post">
+            <div className="post-content">
+              <h3>Dev Conference Talk</h3>
+              <p>Presented a live demo on accessibility best practices at a recent developer conference.</p>
+              <a href="/" className="btn">Read More</a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

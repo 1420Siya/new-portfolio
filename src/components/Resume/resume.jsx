@@ -20,8 +20,8 @@ const Resume = () => {
               </ul>
             </div>
             <div className="job">
-              <h4>software engineerr</h4>
-              <p>Etihuku</p>
+              <h4>software engineering</h4>
+              <p>Etihuku JAC</p>
               <span className="job-duration">Jun 2018 - Dec 2019</span>
               <ul>
                 <li>Created visually appealing website designs from scratch.</li>
@@ -38,17 +38,7 @@ const Resume = () => {
               <span className="degree-duration">2024 - present</span>
             </div>
           </div>
-          <div className="skills">
-            <h3>Skills</h3>
-            <ul>
-              <li>React.js</li>
-              <li>JavaScript (ES6+)</li>
-              <li>HTML & CSS</li>
-              <li>Node.js</li>
-              <li>Git & GitHub</li>
-             
-            </ul>
-          </div>
+          
         </div>
       </div>
     </section>
